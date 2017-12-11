@@ -32,6 +32,7 @@ class TempConverterControllerSpec extends Specification {
             -17.8 |    0.0
     }
 
+
     @Unroll
     void "fahrenheit conversion of #input should give #result"(input, result) {
         given:

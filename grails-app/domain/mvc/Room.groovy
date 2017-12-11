@@ -1,6 +1,6 @@
 package mvc
 
-// import grails.rest.Resource
+ //import grails.rest.Resource
 
 // @Resource
 class Room {

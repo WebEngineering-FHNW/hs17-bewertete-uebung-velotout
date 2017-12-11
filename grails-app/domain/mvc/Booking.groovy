@@ -1,9 +1,12 @@
 package mvc
 
+import grails.rest.Resource
+
+ @Resource
 class Booking {
 
     Person booker
-    Room   room
+    Media   media
     Date   date
     String slot
 
