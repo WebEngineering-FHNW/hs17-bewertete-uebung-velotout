@@ -6,7 +6,7 @@ abstract class Media{
     String autor
 
     static constraints = {
-        title size: 3..15, blank: false
-        autor size:3..20,blank:false
+        title size: 3..30, blank: false
+        autor size:3..30,blank:false
     }
 }

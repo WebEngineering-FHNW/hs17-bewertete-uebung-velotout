@@ -9,11 +9,12 @@ class UrlMappings {
         "/cds"(resources:"cd")
         "/booking"(resources:"booking")
 
-                "/$controller/$action?/$id?(.$format)?"{
+        "/$controller/$action?/$id?(.$format)?"{
             constraints {
                 // apply constraints here
             }
         }
+        //"/"(redirect: "/static/index.html")
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')

@@ -1,11 +1,103 @@
 <!doctype html>
 <html>
-<head>
-    <title>
-        Homepage
-    </title>
+
+<head> <!--***************************HEAD***************************nicht angezeigt*************************** -->
+    <title>Web Engineering - bewertete Uebung.</title>
+    <meta name="layout" content="main"/>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="./style.css"><!--Le fichier CSS relié-->
+    <link rel="icon" href="icone.ico"  type="image/x-ico" /><!--Icon(Reiter) -->
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'><!--Google Font)-->
 </head>
 <body>
-    Some text that links to a <a href="Second.html">second</a> page.
+<header><!--HEADER ganz oben-->
+    <!--  <a></a><g:link controller="rooms" action="">Rooms search page</g:link>-->
+    <h1> Informationen über FHWN Windisch</h1>
+</header>
+<nav><!--NAVIGATION-->
+    <a href=""><img class="nav" src="images/Accueil.png"/></a>
+    <a href="books.html" > Books</a>
+    <a href="persons" > Benutzer</a>
+    <a href="cds" > CDs</a>
+    <a href="booking" > Ausleih Table </a>
+    <a href="persons/create" > Sich registrieren </a>
+    <a href="booking/create"  > Media ausleihen </a>
+</nav>
+
+<div id="content" role="main">
+    <section class="row colset-2-its">
+        <h2>Wilkommen ! LIBRARY SYSTEM</h2>
+        <h3>Die aktuelle Zeit:
+        <script>
+            var uhrzeit = new Date();
+            document.write(uhrzeit.getHours());
+            document.write(":");
+            document.write(uhrzeit.getMinutes());
+            document.write(":");
+            document.write(uhrzeit.getSeconds());
+        </script> </h3>
+
+    <section>
+        <h2> Neue Medien online !  </h2>
+
+        <article><!--On a plusieurs articles, chacun traite les informations d'un livre -->
+            <div class="gauche"><a href="Pages/livre.html"><img class="content" src="./Images/Livre7.jpg"/></a></div>
+            <div class="droite"> <p><h3> La Belle et l'univers, Georges Wissenbourg Collection Nathan,2015 </h3>
+                C est l'incroyable histoire de John Stewart, un notaire réputé de New York qui va à l avenir
+                changer le fonctionnement des super-ordinateurs. Un matin en buvant son café il réalise l'
+                impossible. Au final il va lutter prés de 30 ans pour concrétiser son projet. Mais le problème
+                est toujours le même. La crise des années 2000 a envahi l 'Amérique du Nord et il est difficile
+                de trouver des fonds pour mener à bien sa quête. </p>
+                <p>Avis du public ( 4,76/ 5)  </p></div>
+            <br> </article>
+
+        <article>
+            <div class="gauche"><a href="Pages/livre.html"><img class="content" src="./Images/Livre1.jpg"/></a></div>
+            <div class="droite"> <p><h3> La Belle et l'univers, Georges Wissenbourg Collection Nathan,2015 </h3>
+                C est l'incroyable histoire de John Stewart, un notaire réputé de New York qui va à l avenir
+                changer le fonctionnement des super-ordinateurs. Un matin en buvant son café il réalise l'
+                impossible. Au final il va lutter prés de 30 ans pour concrétiser son projet. Mais le problème
+                est toujours le même. La crise des années 2000 a envahi l 'Amérique du Nord et il est difficile
+                de trouver des fonds pour mener à bien sa quête. </p>
+                <p>Avis du public ( 4,76/ 5)  </p></div>
+            <br> </article>
+
+        <article>
+            <div class="gauche"><a href="Pages/livre.html"><img class="content" src="./Images/Livre2.jpg"/></a></div>
+            <div class="droite"> <p><h3> La Belle et l'univers, Georges Wissenbourg Collection Nathan,2015 </h3>
+                C est l'incroyable histoire de John Stewart, un notaire réputé de New York qui va à l avenir
+                changer le fonctionnement des super-ordinateurs. Un matin en buvant son café il réalise l'
+                impossible. Au final il va lutter prés de 30 ans pour concrétiser son projet. Mais le problème
+                est toujours le même. La crise des années 2000 a envahi l 'Amérique du Nord et il est difficile
+                de trouver des fonds pour mener à bien sa quête. </p>
+                <p>Avis du public ( 4,76/ 5)  </p></div>
+            <br> </article>
+
+        <article>
+            <div class="gauche"><a href="Pages/livre.html"><img class="content" src="./Images/Livre3.jpg"/></a></div>
+            <div class="droite"> <p><h3> La Belle et l'univers, Georges Wissenbourg Collection Nathan,2015 </h3>
+                C est l'incroyable histoire de John Stewart, un notaire réputé de New York qui va à l avenir
+                changer le fonctionnement des super-ordinateurs. Un matin en buvant son café il réalise l'
+                impossible. Au final il va lutter prés de 30 ans pour concrétiser son projet. Mais le problème
+                est toujours le même. La crise des années 2000 a envahi l 'Amérique du Nord et il est difficile
+                de trouver des fonds pour mener à bien sa quête. </p>
+                <p>Avis du public ( 4,76/ 5)  </p></div>
+            <br> </article>
+
+        <article>
+            <div class="gauche"><a href="Pages/livre.html"><img class="content" src="./Images/Livre4.jpg"/></a></div>
+            <div class="droite"> <p><h3> La Belle et l'univers, Georges Wissenbourg Collection Nathan,2015 </h3>
+                C est l'incroyable histoire de John Stewart, un notaire réputé de New York qui va à l avenir
+                changer le fonctionnement des super-ordinateurs. Un matin en buvant son café il réalise l'
+                impossible. Au final il va lutter prés de 30 ans pour concrétiser son projet. Mais le problème
+                est toujours le même. La crise des années 2000 a envahi l 'Amérique du Nord et il est difficile
+                de trouver des fonds pour mener à bien sa quête. </p>
+                <p>Avis du public ( 4,76/ 5)  </p></div>
+            <br> </article>
+
+
+    </section>
+
+    <footer> Tous droits réservés, Bastady Céline, <a href="Pages/Mentions.html"> Mentions légales </a> </footer>
 </body>
 </html>

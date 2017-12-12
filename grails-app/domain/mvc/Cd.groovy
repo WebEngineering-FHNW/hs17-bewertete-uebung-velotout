@@ -7,7 +7,7 @@ class Cd extends Media {
     @Override
     String toString(){ autor+"-"+title+"."+format }
     static constraints = {
-        format size:3..20,blank:false
+        format size:3..30,blank:false
         }
 
 }

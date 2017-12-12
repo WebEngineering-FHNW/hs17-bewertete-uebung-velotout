@@ -1,11 +1,103 @@
 <!doctype html>
 <html>
-<head>
-    <title>
-        Second
-    </title>
+
+<head> <!--***************************HEAD***************************nicht angezeigt*************************** -->
+    <title>Web Engineering - bewertete Uebung.</title>
+    <meta name="layout" content="main"/>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="./style.css"><!--Le fichier CSS relié-->
+    <link rel="icon" href="icone.ico"  type="image/x-ico" /><!--Icon(Reiter) -->
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'><!--Google Font)-->
 </head>
 <body>
+<header><!--HEADER ganz oben-->
+    <!--  <a></a><g:link controller="rooms" action="">Rooms search page</g:link>-->
+    <h1> Informationen über FHWN Windisch</h1>
+</header>
+<nav><!--NAVIGATION-->
+    <a href=""><img class="nav" src="images/Accueil.png"/></a>
+    <a href="books.html" > Books</a>
+    <a href="persons" > Benutzer</a>
+    <a href="cds" > CDs</a>
+    <a href="booking" > Ausleih Table </a>
+    <a href="persons/create" > Sich registrieren </a>
+    <a href="booking/create"  > Media ausleihen </a>
+</nav>
     Some text that links back to the <a href="Home.html">home</a> page.
+
+    <section>
+        <h2> Les livres coup de coeur </h2>
+
+        <div class="gauche"><img class="content" src="./Images/Livre10.jpg"/></div>
+        <div class="droite"><h3>Les mille et une nuit, Albert Somerholder </h3>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le 			Lorem Ipsum est le faux texte standard
+                de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour 				réaliser un livre spécimen de polices de texte.</p>
+            <p>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son 			contenu n'en soit modifié. </p> </div><br>
+        <ul>
+            <li>Les mille et une nuit, Albert Somerholder <img class="content" src="./Images/Livre10.jpg"/></li>
+            <li>Traffic sous la lumière, Emile Zala <img class="content" src="./Images/Livre12.jpg"/> </li>
+            <li>Mécanisme du mal, Louis Zwanchi <img class="content" src="./Images/Livre6.jpg"/> </li>
+            <li>L'architecture et la peinture, John Puhin <img class="content" src="./Images/Livre11.jpg"/> </li>
+            <li>L'usine de la nouvelle lune, Dr Alister <img class="content" src="./Images/Livre8.jpg"/> </li>
+            <li>Ajaccio en périple, Lisa Dorx <img class="content" src="./Images/Livre9.jpg"/> </li>
+        </ul>
+        <h2>TOP 5 "Les mieux notés" </h2>
+        <p>
+            On trouve dans cette section les 5 oeuvres les mieux notés par les lecteurs. Tous les internautes
+            peuvent donner leur avis et ajouter des notes pour définir le TOP 5 du mois. Les différents titres
+            restent cachés pour ne pas influencer les internautes n'ayant pas votés. Vous pouvez néanmoins
+            voir les différents résultats en survolant  les places dans le classement.
+        </p>
+        <article>
+            <ul>
+                <li class="turn">
+                    <h2>1</h2>
+                    <div>
+                        <p id="texte">Mécanisme du mal, Louis Zwanchi
+                            disponible en livre électronique</p>
+                    </div>
+                </li>
+                <li class="turn">
+                    <h2>2</h2>
+                    <div>
+                        <p id="texte">Les mille et une nuit, Albert Somerholder Collection Nathan,2015
+                            Genre: Enfant</p>
+                    </div>
+                </li>
+                <li class="turn">
+                    <h2>3</h2>
+                    <div>
+                        <p id="texte">L'usine de la nouvelle lune, Dr Alister Collection Nathan,2015
+                            Genre: Science-fiction </p>
+                    </div>
+                </li>
+                <li class="turn">
+                    <h2>4</h2>
+                    <div>
+                        <p id="texte">Ajaccio en périple, Lisa Dorx Collection Nathan,2015
+                            Genre:Classique </p>
+                    </div>
+                </li>
+                <li class="turn">
+                    <h2>5</h2>
+                    <div>
+                        <p id="texte"> La Belle et l'univers, Georges Wissenbourg Collection Nathan,2015
+                            Genre: Roman policier</p>
+                    </div>
+                </li>
+
+            </ul>
+        </article>
+
+        <h2> Présentation </h2>
+        <p>
+            Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum es gt le faux texte standard
+            de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+            Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé
+            dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications
+            de mise en page de texte, comme Aldus PageMaker.
+        </p>
+
+    </section>
 </body>
 </html>

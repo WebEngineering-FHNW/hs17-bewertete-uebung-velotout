@@ -21,6 +21,7 @@
     <a href="booking" > Ausleih Table </a>
     <a href="persons/create" > Sich registrieren </a>
     <a href="booking/create"  > Media ausleihen </a>
+    <a href="/static/Home.html"  > Home</a>
 </nav>
 
 <!--awfull  green backgroun
@@ -32,9 +33,38 @@
 
     <div id="content" role="main">
         <section class="row colset-2-its">
-            <h1>Wilkommen ! LIBRARY SYSTEM</h1>
-            <a href="${g.resource(file:'./views/index.html')}">My Link</a>
+            <h2>Wilkommen ! LIBRARY SYSTEM</h2>
+            <h3>Die aktuelle Zeit:
 
+                <script src="http://code.jquery.com/jquery-latest.js">
+                </script>
+                <script src="js/jquery.carouFredSel.js">
+                </script>
+                <script>
+                    $(document).ready(domReady);
+                    function domReady() {
+                        $("#carousel").carouFredSel({items : 4});
+                    }
+                </script>
+
+            <script>
+                var uhrzeit = new Date();
+                document.write(uhrzeit.getHours());
+                document.write(":");
+                document.write(uhrzeit.getMinutes());
+            </script></h3>
+
+            <a href="${g.resource(file:'./views/index.html')}">My Link</a>
+            <ul id="carousel">
+                <li> c </li>
+                <li> a </li>
+                <li> r </li>
+                <li> o </li>
+                <li> u </li>
+                <li> s </li>
+                <li> e </li>
+                <li> l </li>
+            </ul>
             <p>
                 Congratulations, you have successfully started your first Grails application! At the moment
                 this is the default page, feel free to modify it to either redirect to a controller or display

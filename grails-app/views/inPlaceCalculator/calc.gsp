@@ -2,7 +2,7 @@
 <head>
   <meta name="layout" content="form"/>
   <title>
-    In-Place Calculator
+    In-Place COST Calculator
   </title>
 </head>
 
