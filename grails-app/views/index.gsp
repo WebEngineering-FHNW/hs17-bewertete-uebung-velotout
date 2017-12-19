@@ -17,7 +17,6 @@
     <a href="/index"><asset:image alt="Home" class="nav" src="Accueil.png"/>  </a>
     <a href="books.html" > Books</a>
     <a href="persons" > Benutzer</a>
-    <a href="cds" > CDs</a>
     <a href="actualBooking" > Ausleih Table </a>
     <a href="persons/create" > Sich registrieren </a>
     <a href="booking/create"  > Media ausleihen </a>
