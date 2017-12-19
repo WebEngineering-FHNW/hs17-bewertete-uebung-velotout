@@ -29,12 +29,15 @@
   <g:each var="book" in="${bookings}">
     <li>  ${book.booker} hat <strong>${book.media} </strong> ausgeliehen.
     <br>den  ${book.date}
-    <p id="comment">test text</p>
+    <p id="comment">No comments</p>
+      <!--VERSUCH
       <script>
-           if (){  status="Please give the media back"; }
+        var today = new Date().clearTime();
+        var returnDate = ${book.date};
+           if (returnDate==today){  status="Please give the media back: returnDate"; }
             else {status="No Problem with this Booking"; }
               document.getElementById("comment").innerHTML =status;
-      </script>
+      </script>-->
 
       <br><br> </li>
   </g:each>

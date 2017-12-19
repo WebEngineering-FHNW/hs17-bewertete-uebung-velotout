@@ -27,7 +27,7 @@ class BootStrap {
         save(new Booking(booker: celine, media: book02 , date: today))
         save(new Booking(booker: jurg, media: book03, date: today + 1))
 
-        
+
 
     }
 
