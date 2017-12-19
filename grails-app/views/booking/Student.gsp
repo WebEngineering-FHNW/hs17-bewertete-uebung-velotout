@@ -27,7 +27,7 @@
   Student in diese Datenbank
   <ul>
   <g:each var="person" in="${people}">
-    <li>  ${person.firstName} ${person.lastName}  </li>
+    <li> <mvc:decorate language="${person.sprache}" var="${person.sexe}"> ${person.firstName} ${person.lastName} </mvc:decorate> </li>
      </g:each>
 </ul>
   .

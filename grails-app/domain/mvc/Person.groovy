@@ -7,7 +7,8 @@ class Person {
     boolean student
     String email
     String fakultaet
-    //char sexe
+    String sexe
+    String sprache
 
     @Override
     String toString(){
@@ -20,14 +21,13 @@ class Person {
     final static UNI_Basel = "Universität Basel"
     final static HFU = "Hochschule Furtwangen"
 
-    final static masculin = 'M';
 
     static constraints = {
         firstName size: 3..15, blank: false
         fakultaet inList: [FHNW_Windisch, FHNW_Olten, ETH_Zurich, UNI_Basel,HFU]
         lastName size: 3..15, blank: false
         email email: true, blank: false,unique: true
-     //   sexe inList:[masculin,'F','N']
-
+        sexe inList:["Masculin","Feminin","/"]
+        sprache inList:["Deutsch","Englisch","French","Italian","Others"]
     }
 }
