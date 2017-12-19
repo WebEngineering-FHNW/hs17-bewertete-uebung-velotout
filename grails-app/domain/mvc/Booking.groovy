@@ -2,19 +2,22 @@ package mvc
 
 import grails.rest.Resource
 
- @Resource
+// @Resource ==> Fur JSON format Service
+
+
 class Booking {
 
     Person booker
     Media   media
     Date   date
-    String slot
+    //Date returnDate = date+15;
 
-    final static AM  = "08:00 - 11:00"
-    final static PM1 = "12:00 - 15:00"
-    final static PM2 = "15:00 - 18:00"
+    String toString(){
+       return booker.toString()+" ==> "+media.toString()+" for "+date;
+    }
 
     static constraints = {
-		slot inList: [AM, PM1, PM2]
+        date min: new Date().clearTime(),nullable:false,blank:false
+
     }
 }

@@ -7,7 +7,7 @@ class UrlMappings {
         "/persons"(resources: "person")
         "/books"(resources: "book")
         "/cds"(resources:"cd")
-        "/booking"(resources:"booking")
+        "/actualBooking"(resources:"booking")
 
         "/$controller/$action?/$id?(.$format)?"{
             constraints {
@@ -16,6 +16,7 @@ class UrlMappings {
         }
         //"/"(redirect: "/static/index.html")
         "/"(view:"/index")
+        "/index"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

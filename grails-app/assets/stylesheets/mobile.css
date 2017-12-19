@@ -10,6 +10,13 @@
         padding: 0.25em;
     }
 
+    .gaucheHome {
+        display:none;
+    }
+    .droiteHome {
+     display:none;
+    }
+
     /* Hide individual steps in pagination, just have next & previous */
     .pagination .step, .pagination .currentStep {
         display: none;

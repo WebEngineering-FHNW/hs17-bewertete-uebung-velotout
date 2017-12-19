@@ -1,113 +1,120 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Raleway);
+﻿
+header > h2,h1{ /* Header */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*text-shadow: 0 0 5px, rgba(0,0,0,.3) 0 1px 3px, rgba(0,0,0,.15) 0 3px 5px, rgba(0,0,0,.2) 0 5px 10px, rgba(0,0,0,.2) 0 10px 10px, rgba(0,0,0,.1) 0 15px 15px; /* Effet de police en relief*/
+    text-shadow:1px 1px 2px gray;/*texte ombragé*/
+    text-decoration: none;
+    font-family: 'Sawasdee', sans-serif;
+    font-size:2em;
+    /*font: normal 300% Arial, Helvetica, sans-serif;*/
+    color:white;
+    letter-spacing: -2px;
+}
 
-h1{ /* Header */
-padding-top: 10px;
-padding-bottom: 10px;
-/*text-shadow: 0 0 5px, rgba(0,0,0,.3) 0 1px 3px, rgba(0,0,0,.15) 0 3px 5px, rgba(0,0,0,.2) 0 5px 10px, rgba(0,0,0,.2) 0 10px 10px, rgba(0,0,0,.1) 0 15px 15px; /* Effet de police en relief*/
-text-shadow:1px 1px 2px gray;/*texte ombragé*/
-font-family: 'Sawasdee', sans-serif;
-font-size:2em;
-/*font: normal 300% Arial, Helvetica, sans-serif;*/ 
-color:white;
-letter-spacing: -2px; }
-
-/* un titre dans un conteneur d'id slogan: #slogan h1 */ 
+/* un titre dans un conteneur d'id slogan: #slogan h1 */
 
 
 html{
--webkit-transition: background-color 2s linear;
--moz-transition: background-color 2s linear;
-transition: background-color 2s linear;
-/*background-image: url(fond4.jpg);
-background-color: orange;#089; */
-background-image: url(../Images/fond.jpg);
-background-attachment:no-repeat;
-background-size: cover;
-cursor:url("../Images/curseur.png"), auto;
-
+    background-size: cover;
+    background-image: url(../Images/fond.jpg);
+    cursor:url("../Images/curseur.png"), auto;
+    color:black;
 }
 
 body {
-margin-left:15%;
-width: 70%;
+    margin-left:10%;
+    width: 80%;
+
 }
 
 header{
-height: 20%;
-background-image:url("../images/Livre1.jpg");
-border-radius: 5px;
+    height: 25%;
+    background-size: cover;
+    background-image: url(../images/t.jpg);
 }
 
+
+/*Table*/
+tr:hover{
+    background-color: #d5b04d ;
+
+}
+th:hover{
+    background-color:#d59226;
+
+}
 
 
 
 /*Barre de navigation*/
 
 nav {
-/*
-DEGRADE */ 
-background: -webkit-linear-gradient(deepskyblue, dodgerblue);
+    /*
+    DEGRADE */
+    background: -webkit-linear-gradient(deepskyblue, dodgerblue);
     background:    -moz-linear-gradient(deepskyblue, dodgerblue);
     background:     -ms-linear-gradient(deepskyblue, dodgerblue);
     background:      -o-linear-gradient(deepskyblue, dodgerblue);
     background:         linear-gradient(deepskyblue, dodgerblue);
 
-height: 2em;
-display: table;
-width: 100%;
-padding: 0;
-border-radius: 20px;
-box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2);
+    height: 2em;
+    display: table;
+    width: 100%;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2);
 }
 nav > a:hover, nav > a:focus{
     background: rgba(255,255,255,.2);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,0 -1px 0 hsl(210, 100%, 42%) inset, 0 -2px 0 hsl(210, 100%, 48%) inset, 0 -3px 0 hsl(210, 100%, 54%) inset, 0 -4px 0 hsl(210, 100%, 60%) inset, 0 -5px 0 hsl(210, 100%, 70%) inset; 
-	 padding: 8px 25px 17px 25px;
-	transition: all .3s;
-} 
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,0 -1px 0 hsl(210, 100%, 42%) inset, 0 -2px 0 hsl(210, 100%, 48%) inset, 0 -3px 0 hsl(210, 100%, 54%) inset, 0 -4px 0 hsl(210, 100%, 60%) inset, 0 -5px 0 hsl(210, 100%, 70%) inset;
+    padding: 8px 25px 17px 25px;
+    transition: all .3s;
+}
 nav > a:active {
-    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); 
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
     box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
 }
 
 nav > a {
-padding: 8px 8px 17px 8px;
-display: table-cell;
-color:white;
-text-decoration:none ;
-margin-left: 80px;
-text-align:center;
+    padding: 8px 8px 17px 8px;
+    display: table-cell;
+    color:white;
+    text-decoration:none ;
+    margin-left: 80px;
+    text-align:center;
 }
 
 a {
-color:#099;
+    color:#099;
 }
 
+
 a:hover{
-text-shadow: 0 0 5px, rgba(0,0,0,.3) 0 1px 3px, rgba(0,0,0,.15) 0 3px 5px, rgba(0,0,0,.2) 0 5px 10px, rgba(0,0,0,.2) 0 10px 10px, rgba(0,0,0,.1) 0 15px 15px;  
+    text-shadow: 0 0 5px, rgba(0,0,0,.3) 0 1px 3px, rgba(0,0,0,.15) 0 3px 5px, rgba(0,0,0,.2) 0 5px 10px, rgba(0,0,0,.2) 0 10px 10px, rgba(0,0,0,.1) 0 15px 15px;
 }
 
 section{ /*MARGIN marge de la boite   PADDING contenu*/
-position: float;
-box-sizing: border-box;
-padding: 2%; /*texte touche pas les bords */ 
-padding-top:1%;
-margin-top: 1em;
-width: 100%; /*section prend toute la largeur dispo */
-background-color: white;
-border-radius: 20px;
-box-shadow: 8px 8px 30px #000; /*droite bas puissance couleur*/
-font-family: 'Sawasdee', sans-serif;
+    position: float;
+    box-sizing: border-box;
+    padding: 2%; /*texte touche pas les bords */
+    padding-top:1%;
+    margin-top: 1em;
+    width: 100%; /*section prend toute la largeur dispo */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 8px 8px 30px #000; /*droite bas puissance couleur*/
+    font-family: 'Sawasdee', sans-serif;
 }
 
 h2{
-text-decoration: underline;
-padding-top: 1%;
+    text-decoration: underline;
+    padding-top: 1%;
 }
 
 .nav{
-margin-left: 80px;
-height:1.8em;
+    margin-left: 80px;
+    height:1.8em;
 
 }
 

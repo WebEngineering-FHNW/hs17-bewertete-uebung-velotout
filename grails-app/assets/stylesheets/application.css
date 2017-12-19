@@ -33,32 +33,43 @@ header > h2,h1{ /* Header */
 
 
 html{
-    -webkit-transition: background-color 2s linear;
-    -moz-transition: background-color 2s linear;
-    transition: background-color 2s linear;
-    /*background-image: url(fond4.jpg);
-    background-color: orange;#089; */
-    background-image: url(../Images/fond.jpg);
-    background-attachment:no-repeat;
     background-size: cover;
+    background-image: url(../Images/fond.jpg);
     cursor:url("../Images/curseur.png"), auto;
-
+    color:black;
 }
 
 body {
     margin-left:10%;
     width: 80%;
+    background-color: #79502d;
 }
 
 header{
-    height: 20%;
-    background-image:url(fond3.jpg);
-
-    border-radius: 5px;
+    height: 25%;
+    background-size: cover;
+    background-image: url(../Images/t.jpg);
 }
 
 
 
+/*Table*/
+tr:hover{
+    background-color: #d5b04d ;
+
+}
+th:hover{
+    background-color:#d59226;
+
+}
+
+section>section:hover{
+    -webkit-transition: background-color 2s linear;
+    -moz-transition: background-color 2s linear;
+    transition: background-color 2s linear;
+    background-color:   darkorange;
+}
+li>a{color:white; background-color: #d58512}
 
 /*Barre de navigation*/
 
@@ -102,6 +113,7 @@ a {
     color:#099;
 }
 
+
 a:hover{
     text-shadow: 0 0 5px, rgba(0,0,0,.3) 0 1px 3px, rgba(0,0,0,.15) 0 3px 5px, rgba(0,0,0,.2) 0 5px 10px, rgba(0,0,0,.2) 0 10px 10px, rgba(0,0,0,.1) 0 15px 15px;
 }
@@ -123,10 +135,19 @@ h2{
     text-decoration: underline;
     padding-top: 1%;
 }
+.gaucheHome {
+    float:left;
+    width:50%;
+}
 
+.droiteHome {
+    margin-left:50%;
+}
 .nav{
     margin-left: 80px;
     height:1.8em;
 
 }
 
+fieldset,ol{background-color: #e6b664
+}
