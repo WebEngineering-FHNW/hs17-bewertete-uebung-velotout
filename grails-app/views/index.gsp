@@ -1,12 +1,13 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="de" xmlns="http://www.w3.org/1999/html">
 
 <head> <!--***************************HEAD***************************nicht angezeigt*************************** -->
     <title>Web Engineering - INDEX</title>
-    <meta name="layout" content="main"  charset="UTF-8"/>
+    <meta name="layout" content="main"/>
 
     <asset:link rel="icon" href="icone.ico"  type="image/x-ico" /><!--Icon(Reiter) -->
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'><!--Google Font)-->
+
 </head>
 <body>
 <header><!--HEADER ganz oben-->
@@ -25,9 +26,15 @@
 
 <div id="content" role="main">
     <section class="row colset-2-its">
-        <section>
-        <div class="gaucheHome"><asset:image src="header.jpg" height="300"/></div>
-            <div class="droiteHome"><h2>Wilkommen ! LIBRARY SYSTEM</h2>
+        <h2>LIBRARY SYSTEM</h2>
+        <section> <h3 id="welcome">    <script> /*Beispiel gesucht bei https://www.w3schools.com/js/tryit.asp?filename=tryjs_ifthenelse*/
+            var hour = new Date().getHours(); var welcome;
+            if (hour < 18) {welcome = "Guten Tag !"; } else { welcome = "Guten Abend !"; }
+            document.getElementById("welcome").innerHTML = welcome;
+        </script> </h3>
+
+        <div class="gaucheHome"><asset:image alt="Book Picture" src="header.jpg" height="300"/></div>
+            <div class="droiteHome">
 
 
                 <h3>Zustand aktualisiert am
@@ -37,6 +44,7 @@
                         document.write(uhrzeit.getHours()+":"+uhrzeit.getMinutes()+"Uhr");
                     </script> </h3>
                 <h3><a href="../booking/search"  > Wollen sie die Studentliste anschauen ? Clicken sie bitte HIER !  </a></h3>
+                <h3><a href="../booking/bookingList"  > Wollen sie die Ausleihliste anschauen ? Clicken sie bitte DA !  </a></h3>
         <p>
             Öffnungszeiten während der Weihnachtszeit Die Universitätsbibliothek hat auch in der Weihnachtszeit an allen Tagen geöffnet.
             Bitte beachten Sie, dass für einzelne Bereiche der UB gesonderte Öffnungs- und Servicezeiten gelten.

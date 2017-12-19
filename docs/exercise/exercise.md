@@ -32,17 +32,28 @@ Good luck!
 ## Project delivery <to be filled by student>
 
 How to start the project: (if other than `grailsw run-app`)
+I used an IDE but it will normally work with run-app
 
 How to test the project:  (if other than `grailsw test-app`)
+I did some test for my navigation rules (Page "News" ) 
+and some test for my BookingController
 
 Project description:      (if other than `/index.html`)
+This is a library-system. You can register yourself, and than use CRUD operation of a User-Object.
+In addiction I hadded a static page (NEWS) because I wanted to train myself with html.
+You can create media (book, cd...) you can borrow these medias.
+At the homepage (/) you will find two others hidden pages to list the student who are registred
+and a list of all the booking.
 
 External contributions:
+I take some part of your lessons (exemple: in Bootstrap the save() function)
+and little script example on the net (W3school)
 
 Other comments: 
+Unfortunelty I did not highlight the booking which are late. :'(
 
 I'm particular proud of:
-
+my css-file (style.css and what i had by application.css)
 
 ## Project grading 
 

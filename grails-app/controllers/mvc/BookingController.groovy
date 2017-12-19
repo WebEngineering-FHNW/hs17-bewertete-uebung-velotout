@@ -16,6 +16,9 @@ class BookingController {
         render view:"search", model:[people: studentList]
     }
 
-
+    def bookingList(String firstName) {
+        List<Booking> bookingList = Booking.list();
+                render view:"booking", model:[bookings: bookingList]
+    }
 
 }

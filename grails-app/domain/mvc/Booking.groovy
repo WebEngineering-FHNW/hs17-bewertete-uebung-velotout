@@ -13,7 +13,10 @@ class Booking {
     //Date returnDate = date+15;
 
     String toString(){
-       return booker.toString()+" ==> "+media.toString()+" for "+date;
+        Date today = new Date().clearTime();
+        if(date+7<=today) {return booker.toString()+" ==> "+media.toString()+" for "+date+" WARNING Media must come back";}
+        else {
+        return booker.toString()+" ==> "+media.toString()+" for "+date;}
     }
 
     static constraints = {
