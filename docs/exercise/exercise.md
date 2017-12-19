@@ -54,6 +54,7 @@ Unfortunelty I did not highlight the booking which are late. :'(
 
 I'm particular proud of:
 my css-file (style.css and what i had by application.css)
+my regex-pattern for input validation
 
 ## Project grading 
 

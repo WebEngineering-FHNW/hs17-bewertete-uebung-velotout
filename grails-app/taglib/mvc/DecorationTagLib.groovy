@@ -5,11 +5,11 @@ class DecorationTagLib {
     static namespace = "mvc"
 
     def decorate = { attributes, body ->
-        String grade = attributes.grade
+        char sexe = attributes.var
         def decor = "<img src='http://2.bp.blogspot.com/";
-        switch (grade) {
-            case ["1","2","3"] : decor += "-rnfZUujszZI/UZEFYJ269-I/AAAAAAAADnw/BbB-v_QWo1w/s1600/facebook-frown-emoticon.png'>"; break
-            case ["4","5","6"] : decor += "-qODY1kxipZ0/Tv5dwDFFntI/AAAAAAAAAjM/cLXT6KEp-bE/s400/sunglasses%2Bemoticon.png'>"; break
+        switch (sexe) {
+            case ['M'] : decor += "-rnfZUujszZI/UZEFYJ269-I/AAAAAAAADnw/BbB-v_QWo1w/s1600/facebook-frown-emoticon.png'>"; break
+            case ['F'] : decor += "-qODY1kxipZ0/Tv5dwDFFntI/AAAAAAAAAjM/cLXT6KEp-bE/s400/sunglasses%2Bemoticon.png'>"; break
             default: decor = ""
         }
         out << decor

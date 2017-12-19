@@ -13,7 +13,7 @@ class BookingController {
                 studentList.add(p);
             }
         }
-        render view:"search", model:[people: studentList]
+        render view:"student", model:[people: studentList]
     }
 
     def bookingList(String firstName) {

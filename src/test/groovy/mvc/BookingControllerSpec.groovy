@@ -1,15 +1,24 @@
+package mvc
+
+import grails.test.mixin.Mock;
 import grails.test.mixin.TestFor
-import mvc.BookingController
 import spock.lang.Specification
 
 @TestFor(BookingController)
+@Mock(Person)
 class BookingControllerSpec extends Specification {
+
+    BookingController controller ;
+
+    def setup() {
+        controller = new BookingController()
+    }
 
     void "test search"() {
         when:
-        controller.search()
+        controller.search("Jonas")
 
         then:
-        title == 'Web Engineering - STUDENT'
+        model.people == [] //test ob es leer ist
     }
 }

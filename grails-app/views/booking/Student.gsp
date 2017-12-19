@@ -28,7 +28,7 @@
   <ul>
   <g:each var="person" in="${people}">
     <li>  ${person.firstName} ${person.lastName}  </li>
-  </g:each>
+     </g:each>
 </ul>
   .
 </div>
