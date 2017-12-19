@@ -50,7 +50,8 @@ I take some part of your lessons (exemple: in Bootstrap the save() function)
 and little script example on the net (W3school)
 
 Other comments: 
-Unfortunelty I did not highlight the booking which are late. :'(
+Unfortunelty I did not highlight the booking which are late
+and I removed polymorphism (Media -> Cd, Books...)
 
 I'm particular proud of:
 my css-file (style.css and what i had by application.css)

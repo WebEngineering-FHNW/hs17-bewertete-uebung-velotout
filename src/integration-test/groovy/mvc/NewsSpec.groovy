@@ -16,5 +16,5 @@ class NewsSpec extends GebSpec {
         title == "Web Engineering - NEWS"
     }
 
-  
+
 }
