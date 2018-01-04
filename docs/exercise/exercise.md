@@ -59,4 +59,32 @@ my regex-pattern for input validation
 
 ## Project grading 
 
-< to be filled by lecturer>
+Description html: I take the root page as the description.
+Valid html (with minor issues). Nice use of semantic tags, where the 
+nav and header tags are difficult to join with the main layout.
+The application works fine.
+
+Functionality:
+CRUD and overview functionality for person and book entities and booking relation
+(nicely resolved m:n relation into m:1 as explained in the lecture).
+Interactive create/edit pages with solid validation.
+
+Engineering:
+Commit log is ok (you started a bit late with committing).
+Test are minimal. HTML is good. Almost no comments but the code is self-describing.
+Naming is ok. Some duplication in the view code but nice use of TagLib.
+
+We already hit the ceiling so I spare the effort to think about extra points.
+However, there are some really nice CSS effects at work that would call for "artistic value"!
+
+Congratulations!
+You created an interactive, DB-backed, distributed, multi-user web application from scratch
+all on your own. You made very good use of Web MVC and used the Grails scaffolding to your
+advantage. You modeled the domain well and looked after proper validation.
+
+Total grade: 6.0
+
+
+
+
+
